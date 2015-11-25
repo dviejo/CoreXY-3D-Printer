@@ -13,6 +13,10 @@ holderHeight = 40;
 pulleyDiam = 12.2;
 beltWidth = 0.7;
 
+//uncomment for printing
+//translate([-2,0,0]) rotate([0, -90, 0]) pulleyHolder(h=20+12.65+6+0.5);
+//translate([2,0,0]) rotate([0, 90, 0]) mirror([1,0,0]) pulleyHolder(h=20+12.65+6+0.5);
+
 module pulleyHolder(h = holderHeight)
 translate([0, -holderLength, 0])
 difference()
