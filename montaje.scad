@@ -9,13 +9,14 @@
  */
 
 include <MCAD/stepper.scad>
+include <pulleyHolder.scad>
 
 //free pulley measurements
 pulleyDiam = 12.2;
 pulleyHoleDiam = 4;
 pulleyHeight = 11.6;
 
-beltWidth = 1.5;
+beltWidth = 0.7;
 
 //shaft guide measurements
 shaftLength = 400;
@@ -110,6 +111,11 @@ translate([0, 0, 20+guideHeight+6+shaftHeight]) rotate(90) mirror([0, 0, 1]) sha
 translate([0, 0, aluHeight+guideHeight+sheetHeight/2])
         aluSheet();
 
+        
+translate([-aluLength/2-20, -aluLength/2-20, 0]) 
+    pulleyHolder(h=heightBelt1);
+translate([aluLength/2+20, -aluLength/2-20, 0]) 
+    mirror([1,0,0]) pulleyHolder(h=heightBelt1);
 
 module aluAxle(length = aluLength, width = 20)
 {
