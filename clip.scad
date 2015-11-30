@@ -22,20 +22,20 @@ belt_tooth_ratio = 0.675;
 
 clipMain();
 
-translate([30, 0, 0])
+translate([20, 0, 0])
 clip();
 
 translate([-20, 0, 0])
-free();
+clipMain();
 
 translate([0, 30, 0])
 {
     clipMain(extraHeight=12);
 
-    translate([30, 0, 0])
+    translate([20, 0, 0])
     clip();
     translate([-20, 0, 0])
-    free(extraHeight=12);
+    clipMain(extraHeight=12);
 }
 
 
@@ -65,10 +65,10 @@ difference()
     #translate([totalWidth, -10, diffHeight+extraHeight]) cube([2, 30, beltHeight]);
     
     //attaching
-    translate([3.5, 3.2, -1]) cylinder(d=3.3, h=totalHeight+extraHeight+2, $fn=15);
-    translate([totalWidth-3.5, 3.2, -1]) cylinder(d=3.3, h=totalHeight+extraHeight+2, $fn=15);
-    translate([3.5, 3.2, 12]) cylinder(d=6.35, h=totalHeight+2, $fn=26);
-    translate([totalWidth-3.5, 3.2, 12]) cylinder(d=6.35, h=totalHeight+2, $fn=26);
+    translate([4, 3.2, -1]) cylinder(d=3.3, h=totalHeight+extraHeight+2, $fn=15);
+    translate([totalWidth-4, 3.2, -1]) cylinder(d=3.3, h=totalHeight+extraHeight+2, $fn=15);
+    translate([4, 3.2, 12]) cylinder(d=6.35, h=totalHeight+2, $fn=26);
+    translate([totalWidth-4, 3.2, 12]) cylinder(d=6.35, h=totalHeight+2, $fn=26);
     
     //belt grip
     translate([-1, 10-1.5-0.5, diffHeight+extraHeight-1.5-1.5]) rotate([0, 90, 0]) 
