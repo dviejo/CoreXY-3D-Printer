@@ -58,7 +58,7 @@ for(i=[-1,1])
 
 color("red")
 {
-    translate([-(structureWidth-motorOffset)/2+pulleyDiam+beltWidth, -(structureLenght/2+20+20)+pulleyDiam, heightBelt1])
+    translate([-(structureWidth-motorOffset)/2+pulleyDiam+beltWidth, -(structureLenght/2+20+20+9)+pulleyDiam, heightBelt1])
         pulley();
     translate([-(structureWidth-motorOffset)/2+pulleyDiam+beltWidth, -14.5, heightBelt1])
         pulley();
@@ -68,7 +68,7 @@ color("red")
 
 color("blue")
 {
-    translate([(structureWidth-motorOffset)/2-pulleyDiam-beltWidth, -(structureLenght/2+20+20)+pulleyDiam, heightBelt2])
+    translate([(structureWidth-motorOffset)/2-pulleyDiam-beltWidth, -(structureLenght/2+20+20+9)+pulleyDiam, heightBelt2])
         pulley();
     translate([(structureWidth-motorOffset)/2-pulleyDiam-beltWidth, -14.5, heightBelt2])
         pulley();
