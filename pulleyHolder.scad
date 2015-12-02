@@ -25,6 +25,7 @@ difference()
     {
         cube([holderWidth, holderLength, h]);
         translate([0, holderLength-5, 20.15]) cube([holderWidth, 20+5, 5]);
+        translate([0, holderLength, 20.15]) cube([20,20, h-20.15]);
     }
     
     //cutout
@@ -32,6 +33,7 @@ difference()
         translate([0, -holderLength, 0])
             cube([holderWidth+2, holderLength+2, holderHeight*2]);
     translate([5, -5, -5]) cube([holderWidth, holderLength, holderHeight]);
+        #translate([-1, holderLength-1, h+1])rotate([-45, 0, 0]) cube([22,60, h-20.15]);
     
     //attaching holes
     translate([holderWidth-10, -1, 20/2]) rotate([-90,0 ,0])
