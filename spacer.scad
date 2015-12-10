@@ -34,11 +34,11 @@ difference()
         {
             for(i=[-1,1])
             {
-                translate([length/2+i*8, 5, 0]) cylinder(d=8, h=6, $fn=20);                
+                translate([length/2+i*8, 5, 0]) cylinder(d=8.2, h=6, $fn=20);                
             }
         }
         translate([length/2, 5, 0]) cylinder(d=6.2, h=11.6, $fn=20);
-        translate([length/2, 5, 0]) cylinder(d=10.4, h=10.6, $fn=10);
+        translate([length/2, 5, 0]) cylinder(d=10.6, h=10.6, $fn=25);
     }
     
     for(i=[-1,1])
