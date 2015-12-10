@@ -38,7 +38,7 @@ difference()
             }
         }
         translate([length/2, 5, 0]) cylinder(d=6.2, h=11.6, $fn=20);
-        translate([length/2, 5, 0]) cylinder(d=10, h=10.6, $fn=25);
+        translate([length/2, 5, 0]) cylinder(d=10.4, h=10.6, $fn=10);
     }
     
     for(i=[-1,1])
@@ -47,6 +47,6 @@ difference()
         translate([length/2+i*8, 5, 6-3]) cylinder(d=6.4, h=4, $fn=6);
     }
         
-    translate([length/2, 5, -1]) cylinder(d=9, h=6, $fn=6);
-    translate([length/2, 5, 5+0.3]) cylinder(d=4, h=10, $fn=20);
+    translate([length/2, 5, -1]) cylinder(d=8.6, h=8, $fn=6);
+    translate([length/2, 5, 7+0.3]) cylinder(d=4, h=10, $fn=20);
 }
