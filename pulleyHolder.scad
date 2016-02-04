@@ -46,9 +46,9 @@ difference()
         cylinder(d=5.5, h=holderHeight+2);
         
     //pulleys' hole
-    #translate([10, holderLength-28, 20]) 
+    translate([10, holderLength-28, 20]) 
         cylinder(d=3.75, h=holderHeight);
-    #translate([10+pulleyDiam+beltWidth, holderLength-29+pulleyDiam, 20]) 
+    translate([10+pulleyDiam+beltWidth, holderLength-28+pulleyDiam, 20]) 
         cylinder(d=3.75, h=holderHeight);
     translate([10, holderLength-28, holderHeight-8.5]) 
         cylinder(d=8.4, h=5, $fn=6);
@@ -56,12 +56,12 @@ difference()
         cylinder(d=8.4, h=15-3.5, $fn=6);
         
     //spacer holes
-    #translate([10, holderLength-28, h-6]) rotate(90)
+    translate([10, holderLength-28, h-6]) rotate(90)
     {
         translate([8, 0, 0]) cylinder(d=3.3, h=20, $fn=20);
         translate([-8, 0, 0]) cylinder(d=3.3, h=20, $fn=20);
     }
-    #translate([10+pulleyDiam+beltWidth, holderLength-29+pulleyDiam, h-6]) rotate(90)
+    translate([10+pulleyDiam+beltWidth, holderLength-29+pulleyDiam, h-6]) rotate(90)
     {
         translate([8, 0, 0]) cylinder(d=3.3, h=20, $fn=20);
         translate([-8, 0, 0]) cylinder(d=3.3, h=20, $fn=20);
