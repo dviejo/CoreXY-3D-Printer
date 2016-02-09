@@ -23,7 +23,7 @@ module spacer(od=16, id=4, height=11.6)
 }
 
 length = 0;//23;
-separation = 20/2; //16/2 //this last one fits in pulleyHolder
+separation = 22.5/2; //16/2 //this last one fits in pulleyHolder
 
 module spacer2()
 difference()
